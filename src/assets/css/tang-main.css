@@ -1,0 +1,37 @@
+.main-shape {
+	height: 100%;
+	width: 20%;
+    padding:5px;
+    display: inline-block;
+}
+
+.target-shape {
+	height: 200px;
+	width: 300px;
+    padding:5px;
+    background: gainsboro;
+    display: inline-block;
+    margin-right: 150px;
+}
+
+#square {
+    width: 100px; 
+    height: 100px; 
+    background: blue; 
+}
+
+#triangle { 
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 80px 80px 80px;
+    border-color: transparent transparent #f1c40f transparent; 
+}
+
+.tang-drag {
+    position: relative;
+}
+
+body {
+    margin-left: 200px;
+}
