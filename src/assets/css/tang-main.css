@@ -6,7 +6,7 @@
 }
 
 .target-shape {
-	height: 200px;
+	height: 300px;
 	width: 300px;
     padding:5px;
     background: gainsboro;
@@ -17,7 +17,18 @@
 #square {
     width: 100px; 
     height: 100px; 
-    background: blue; 
+    background: orange; 
+}
+
+#quadrangle {
+    width: 100px; 
+    height: 100px; 
+    background: #16a085; 
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 #triangle { 
@@ -25,7 +36,7 @@
     height: 0;
     border-style: solid;
     border-width: 0 80px 80px 80px;
-    border-color: transparent transparent #f1c40f transparent; 
+    border-color: transparent transparent yellowgreen transparent; 
 }
 
 .tang-drag {
