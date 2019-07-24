@@ -13,22 +13,21 @@ $(document).ready(function() {
         stack: '.tang-drag',
         snap: '.target-shape, .tang-drag', // hem şekiller arası hem de hedef puzzle arasında otomatik hizalama yapar.
         snapMode: 'inner',
-        snapTolerance: 20,
+        snapTolerance: 18,
     });
 
-    //çift click ile şeklin rotasyonu kare ise 45 değilse 90 derecelik açılarla değişir.
+    //icona tıkladınğında şeklin rotasyonu kare ise 45 değilse 90 derecelik açılarla değişir.
     var nonSquarePain = 90;
     var squarePain = 45;
     $('.shp-rotate').click(function() {
         var squareId = $(this).parent().attr('id');
         var checkSquare = squareId.includes("square");
-
         if(checkSquare) {
             $(this).parent().css ({
                 '-webkit-transform': 'rotate(' + squarePain + 'deg)',
                    '-moz-transform': 'rotate(' + squarePain + 'deg)',
                      '-o-transform': 'rotate(' + squarePain + 'deg)',
-                    '-ms-transform': 'rotate(' + squarePain + 'deg)'
+                    '-ms-transform': 'rotate(' + squarePain + 'deg)',
             });
         }
         else {
