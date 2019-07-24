@@ -1,9 +1,10 @@
 $(document).ready(function() {
+    
     //class a click edildiğinde şekil hareket ettirilir.
     $('.tang-drag').draggable({
         containment:'window',
         stack: '.tang-drag',
-        snap: '.target-shape',
+        snap: '.target-shape, .tang-drag', // hem şekiller arası hem de hedef puzzle arasında otomatik hizalama yapar.
         snapMode: 'inner',
         snapTolerance: 10,
     });

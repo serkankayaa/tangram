@@ -1,28 +1,27 @@
 .main-shape {
 	height: 100%;
 	width: 20%;
-    padding:5px;
+    padding: 5px;
     display: inline-block;
 }
 
 .target-shape {
-	height: 300px;
-	width: 300px;
-    padding:5px;
+	height: 180px;
+	width: 180px;
     background: gainsboro;
-    display: inline-block;
     margin-right: 150px;
+    float: left;
 }
 
 #square {
-    width: 100px; 
-    height: 100px; 
+    width: 90px; 
+    height: 90px; 
     background: orange; 
 }
 
 #quadrangle {
-    width: 100px; 
-    height: 100px; 
+    width: 90px; 
+    height: 90px; 
     background: #16a085; 
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
@@ -35,14 +34,30 @@
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 0 80px 80px 80px;
+    border-width: 0 90px 90px 90px;
     border-color: transparent transparent yellowgreen transparent; 
+}
+
+#triangle2 { 
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 90px 90px;
+    border-color: transparent transparent blue transparent; 
+}
+
+#triangle3 { 
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 90px 90px 0;
+    border-color: transparent transparent red transparent; 
 }
 
 .tang-drag {
     position: relative;
 }
 
-body {
-    margin-left: 200px;
+.contain {
+    margin-left: 40%;
 }
