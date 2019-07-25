@@ -16,7 +16,7 @@ $(document).ready(function() {
         snapTolerance: 18,
     });
 
-    //icona tıkladınğında şeklin rotasyonu kare ise 45 değilse 90 derecelik açılarla değişir.
+    //icona tıklandığında şeklin rotasyonu kare ise 45 değilse 90 derecelik açılarla değişir.
     var nonSquarePain = 90;
     var squarePain = 45;
     $('.shp-rotate').click(function() {
